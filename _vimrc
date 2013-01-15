@@ -23,6 +23,11 @@ if has("gui_running")
   colorscheme evening
  if has("gui_gtk2")
   set guifont=Inconsolata\ 12
+ elseif has("gui_win32")
+  set guifont=Consolas:h9:cANSI
  endif
 endif
+
+set shiftwidth=4 softtabstop=4
+set incsearch hlsearch
 
