@@ -31,3 +31,5 @@ endif
 set shiftwidth=4 softtabstop=4
 set incsearch hlsearch
 
+filetype plugin on 
+runtime macros/matchit.vim
