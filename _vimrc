@@ -29,7 +29,7 @@ if has("gui_running")
  endif
 endif
 
-set shiftwidth=4 softtabstop=4
+set shiftwidth=2 softtabstop=2
 set incsearch hlsearch
 
 filetype plugin on 
