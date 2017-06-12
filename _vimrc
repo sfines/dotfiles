@@ -13,27 +13,29 @@ set cursorline
 
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-sensible'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
-Bundle 'jpalardy/vim-slime.git'
-Bundle 'VimClojure'
-Bundle 'derekwyatt/vim-scala'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-sensible'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'tpope/vim-rails.git'
+Plugin 'jpalardy/vim-slime.git'
+Plugin 'VimClojure'
+Plugin 'derekwyatt/vim-scala'
 
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
-" ...
+Plugin 'git://git.wincent.com/command-t.git'
+" 
+call vundle#end()
 
 filetype plugin indent on     " required!
 
