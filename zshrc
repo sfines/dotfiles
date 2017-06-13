@@ -1,4 +1,4 @@
-source /Users/stevefines/dotfiles/antigen/antigen.zsh
+source /home/sfines/antigen/antigen.zsh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f /Users/stevefines/Downloads/google-cloud-sdk/path.zsh.inc ]; then
@@ -10,23 +10,24 @@ if [ -f /Users/stevefines/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/stevefines/Downloads/google-cloud-sdk/completion.zsh.inc'
 fi
 
+export PYHOME=/home/sfines/anaconda3
 # If you come from bash you might have to change your $PATH.
-export PATH=/Library/TeX/texbin:/Users/stevefines/anaconda/bin:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PYHOME/bin:$HOME/bin:/usr/local/bin:$PATH
 
-export VIRTUALENVWRAPPER_PYTHON=/Users/stevefines/anaconda/bin/python
-export VIRTUALWRAPPER_VIRTUALENV=/Users/stevefines/anaconda/bin/virtualenv
+export VIRTUALENVWRAPPER_PYTHON=/home/sfines/anaconda3/bin/python
+export VIRTUALWRAPPER_VIRTUALENV=/home/sfines/anaconda3/bin/virtualenv
 
-export WORKON_HOME=/Users/stevefines/anaconda/envs
+export WORKON_HOME=/home/sfines/anaconda3/envs
 
-source /Users/stevefines/anaconda/bin/virtualenvwrapper.sh
+source /home/sfines/anaconda3/bin/virtualenvwrapper.sh
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/stevefines/.antigen/bundles/robbyrussell/oh-my-zsh
+export ZSH=/home/sfines/.antigen/bundles/robbyrussell/oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="junkfood"
+ZSH_THEME="nanotech" # also try philips junkfood
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -48,15 +49,15 @@ export UPDATE_ZSH_DAYS=13
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
